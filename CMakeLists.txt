@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.20)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS ON)
+
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE "Debug")
+endif()
+
+set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/.cmake/gccarmnoneeabi.cmake")
+project(STM32F103C8TX LANGUAGES C CXX ASM)
+add_subdirectory(STM32F103C8TX)

@@ -1,0 +1,10 @@
+# ignore any file whose name case insensitively ends with ".bak" at any depth within the entire project directory.
+**/*.[Bb][Aa][Kk]
+# ignore any directory whose name case insensitively matches ".build" at any depth within the entire project directory.
+**/[.][Bb][Uu][Ii][Ll][Dd]/
+# ignore any directory whose name case insensitively matches "build" at any depth within the entire project directory.
+**/[Bb][Uu][Ii][Ll][Dd]/
+# ignore any directory whose name case insensitively matches "debug" at any depth within the entire project directory.
+**/[Dd][Ee][Bb][Uu][Gg]/
+# ignore any directory whose name case insensitively matches ".venv" at any depth within the entire project directory.
+**/[.][Vv][Ee][Nn][Vv]/

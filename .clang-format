@@ -1,0 +1,7 @@
+BasedOnStyle: Microsoft
+ColumnLimit: 500
+SortIncludes: true
+AlignConsecutiveMacros: true
+BraceWrapping:
+  AfterExternBlock: false
+PointerAlignment: Left
