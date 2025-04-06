@@ -10,6 +10,7 @@ endforeach()
 
 list(REMOVE_DUPLICATES STM32_HEADER_DIRS)
 target_include_directories(${CMAKE_PROJECT_NAME} SYSTEM PRIVATE ${STM32_HEADER_DIRS})
+
 file(GLOB_RECURSE STM32_SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.c" "${CMAKE_CURRENT_SOURCE_DIR}/*.s")
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE ${STM32_SOURCE_FILES})
 set_source_files_properties(${STM32_SOURCE_FILES} PROPERTIES COMPILE_FLAGS "-Wno-conversion -Wno-unused-parameter")

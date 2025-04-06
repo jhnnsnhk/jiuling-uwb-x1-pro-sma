@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F103C8TX_POLL",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${workspaceFolder}/.build/STM32F103C8TX/STM32F103C8TX.elf",
+            "request": "launch",
+            "servertype": "stlink",
+            "interface": "swd",
+            "serialNumber": "B55B5A1A000000007B2BEF01",
+            "runToEntryPoint": "main",
+            "svdPath": "${workspaceFolder}/.svd/STM32F103.svd",
+            "showDevDebugOutput": "both",
+        },
+    ]
+}
